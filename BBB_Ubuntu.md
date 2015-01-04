@@ -247,14 +247,9 @@ install BBIO:
     export http_proxy='http://proxy_ip:port'
 
 另外附几个free proxy list：
+    http://www.vpnbook.com/freevpn
 
-    http://www.proxy.com.ru/
-    
-    http://www.ultraproxies.com/
-    
-    http://free-proxy-list.net/
-    
-    http://www.ippredator.com/
+    http://www.vpngate.net/cn/
 
 后经测试发现免费的变更太快，还是花钱买了个付费的，1年100块钱，每月30G也差不多够用了，然后在win7上新建了VPN，然后共享给本地连接，BBB用网线连接来用。实测BBB也可以用，能够正常更新源，及下载，终于解决这个恼人的事情。
 
