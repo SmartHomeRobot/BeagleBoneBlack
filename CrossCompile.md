@@ -46,3 +46,20 @@ If Ubuntu 14.04 -> 14.10:
     Copyright (C) 2014 Free Software Foundation, Inc.
     This is free software; see the source for copying conditions.  There is NO
     warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+# 3.GIT
+
+The Beaglebone patches and build scripts are stored in a git repository. Install git:
+
+    sudo apt-get install git
+
+And configure with your identity.
+
+    git config --global user.email "your.email@here.com"
+
+# 4.lzop Compression
+
+The Linux Kernel is compressed using lzo. Install the lzop parallel file compressor:
+
+    sudo apt-get install lzop
+
