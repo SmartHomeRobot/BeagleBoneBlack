@@ -66,3 +66,25 @@ The Linux Kernel is compressed using lzo. Install the lzop parallel file compres
 
     sudo apt-get install lzop
 
+# 5.Bootloader: U-Boot
+
+Das U-Boot -- the Universal Boot Loader http://www.denx.de/wiki/U-Boot
+
+## 5.1 Download:
+    ~/
+    git clone git://git.denx.de/u-boot.git
+    cd u-boot/
+    git checkout v2014.10 -b tmp
+
+## 5.2 Patches:
+    ~/u-boot
+    wget -c https://raw.githubusercontent.com/eewiki/u-boot-patches/master/v2014.10/0001-am335x_evm-uEnv.txt-bootz-n-fixes.patch
+ 
+    patch -p1 < 0001-am335x_evm-uEnv.txt-bootz-n-fixes.patch
+
+## 5.3 Configure and Build:
+    ~/u-boot
+    
+    make ARCH=arm CROSS_COMPILE=${CC} distclean
+    make ARCH=arm CROSS_COMPILE=${CC} am335x_evm_defconfig
+    make ARCH=arm CROSS_COMPILE=${CC}
