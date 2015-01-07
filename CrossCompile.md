@@ -88,3 +88,9 @@ Das U-Boot -- the Universal Boot Loader http://www.denx.de/wiki/U-Boot
     make ARCH=arm CROSS_COMPILE=${CC} distclean
     make ARCH=arm CROSS_COMPILE=${CC} am335x_evm_defconfig
     make ARCH=arm CROSS_COMPILE=${CC}
+
+# 6. Upgrade distro "device-tree-compiler" package
+    ~/
+    wget -c https://raw.github.com/RobertCNelson/tools/master/pkgs/dtc.sh
+    chmod +x dtc.sh
+    ./dtc.sh
