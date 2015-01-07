@@ -39,7 +39,10 @@ If Ubuntu 14.04 -> 14.10:
     tar xf gcc-linaro-arm-linux-gnueabihf-4.9-2014.09_linux.tar.xz
     export CC=`pwd`/gcc-linaro-arm-linux-gnueabihf-4.9-2014.09_linux/bin/arm-linux-gnueabihf-
 
-    *Test: If this test fails, verify that you have the 32bit libraries installed on your development system.*
+or edit ~/.zhsrc
+    /home/quanpower/dev/cross_compile/toolchain/gcc-linaro-arm-linux-gnueabihf-4.9-2014.09_linux/bin/arm-linux-gnueabihf-
+
+*Test: If this test fails, verify that you have the 32bit libraries installed on your development system.*
 
     ${CC}gcc --version
     arm-linux-gnueabihf-gcc (crosstool-NG linaro-1.13.1-4.9-2014.09 - Linaro GCC 4.9-2014.09) 4.9.2 20140904 (prerelease)
