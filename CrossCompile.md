@@ -94,3 +94,5 @@ Das U-Boot -- the Universal Boot Loader http://www.denx.de/wiki/U-Boot
     wget -c https://raw.github.com/RobertCNelson/tools/master/pkgs/dtc.sh
     chmod +x dtc.sh
     ./dtc.sh
+
+# 7. Kernel
