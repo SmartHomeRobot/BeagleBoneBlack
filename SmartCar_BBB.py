@@ -74,11 +74,13 @@ def measuring_distance():
     time.sleep(0.000015)
     GPIO.output(TrigPin, GPIO.LOW)
 
-    while GPIO.input(EchoPin)==0:
-        start = time.time()
+    while not GPIO.input(EchoPin):
+        pass
+    start = time.time()
 
-    while GPIO.input(EchoPin)==1:
-        stop = time.time()
+    while GPIO.input(EchoPin):
+        pass
+    stop = time.time()
 
     # Calculate pulse length
     elapsed = stop-start
