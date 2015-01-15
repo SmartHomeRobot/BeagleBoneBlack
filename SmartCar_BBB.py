@@ -13,7 +13,7 @@ RightMotorPin2 = "P8_10"
 TrigPin = "P8_11"
 EchoPin = "P8_12"
 
-CurrDist = 0
+
 
 pins = [LeftMotorPin1,LeftMotorPin2,RightMotorPin1,RightMotorPin2,TrigPin]
 
