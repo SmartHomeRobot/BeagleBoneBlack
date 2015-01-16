@@ -24,7 +24,7 @@ def setup():
         GPIO.output(pin, GPIO.LOW)
         print "pin %s has been set to GPIO.OUT" % pin
     # SET PIN_12 TO INPUT
-    GPIO.setup(EchoPin, GPIO.INPUT)
+    GPIO.setup(EchoPin, GPIO.IN)
 
 def forward():
     GPIO.output(LeftMotorPin1, GPIO.HIGH)
