@@ -10,7 +10,7 @@ EchoPin = "P8_12"
 
 GPIO.setup(TrigPin, GPIO.OUT)
 GPIO.setup(EchoPin, GPIO.IN)
-print "pin %s has been set to GPIO.OUT" % pin
+print "pin %s has been set to GPIO.OUT" % TrigPin
 print "pin %s has been set to GPIO.IN" % EchoPin
 
 def measuring_distance():
