@@ -8,10 +8,11 @@ import time
 TrigPin = "P8_11"
 EchoPin = "P8_12"
 
-GPIO.setup(TrigPin, GPIO.OUT)
-GPIO.setup(EchoPin, GPIO.IN)
-print "pin %s has been set to GPIO.OUT" % TrigPin
-print "pin %s has been set to GPIO.IN" % EchoPin
+def setup():
+    GPIO.setup(TrigPin, GPIO.OUT)
+    GPIO.setup(EchoPin, GPIO.IN)
+    print "pin %s has been set to GPIO.OUT" % TrigPin
+    print "pin %s has been set to GPIO.IN" % EchoPin
 
 def measuring_distance():
     GPIO.output(TrigPin, GPIO.LOW)
@@ -40,6 +41,9 @@ def measuring_distance():
     distance = distance / 2
 
     print "Distance : %.1f" % distance
+
+def destroy():
+    GPIO.cleanup()
 
 def loop():
     while True:
