@@ -26,13 +26,13 @@ def measuring_distance():
 
     print "pin EchoPin 's GPIO.input value is %f" % GPIO.input(EchoPin)
 
-    while not GPIO.input(EchoPin):
+    while GPIO.input(EchoPin):
         pass
     start = time.time()
     print "pin EchoPin 's GPIO.input value is %f" % GPIO.input(EchoPin)
     print "start time is %s" % start
 
-    while GPIO.input(EchoPin):
+    while not GPIO.input(EchoPin):
         pass
     print "pin EchoPin 's GPIO.input value is %f" % GPIO.input(EchoPin)
     stop = time.time()
