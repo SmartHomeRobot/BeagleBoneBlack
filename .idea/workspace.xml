@@ -43,8 +43,8 @@
       <file leaf-file-name="ultrasonic.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ultrasonic.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.9253112" vertical-offset="598" max-vertical-offset="1152">
-              <caret line="58" column="16" selection-start-line="58" selection-start-column="16" selection-end-line="58" selection-end-column="16" />
+            <state vertical-scroll-proportion="0.93360996" vertical-offset="504" max-vertical-offset="1296">
+              <caret line="53" column="17" selection-start-line="53" selection-start-column="17" selection-end-line="53" selection-end-column="17" />
               <folding>
                 <element signature="e#80#113#0" expanded="true" />
               </folding>
@@ -535,12 +535,12 @@
       <created>1421511027983</created>
       <option name="number" value="Default" />
       <updated>1421511027983</updated>
-      <workItem from="1421511027555" duration="2229000" />
+      <workItem from="1421511027555" duration="2779000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2229000" />
+    <option name="totallyTimeSpent" value="2779000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1299" height="633" extended-state="0" />
@@ -608,8 +608,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ultrasonic.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9253112" vertical-offset="598" max-vertical-offset="1152">
-          <caret line="58" column="16" selection-start-line="58" selection-start-column="16" selection-end-line="58" selection-end-column="16" />
+        <state vertical-scroll-proportion="0.93360996" vertical-offset="504" max-vertical-offset="1296">
+          <caret line="53" column="17" selection-start-line="53" selection-start-column="17" selection-end-line="53" selection-end-column="17" />
           <folding>
             <element signature="e#80#113#0" expanded="true" />
           </folding>

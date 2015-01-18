@@ -17,18 +17,26 @@ def setup():
 def measuring_distance():
     GPIO.output(TrigPin, GPIO.LOW)
     time.sleep(0.000002)
-
+    print "pin %s has benn set to GPIO.LOW" % TrigPin
     GPIO.output(TrigPin, GPIO.HIGH)
     time.sleep(0.000015)
+    print "pin %s has benn set to GPIO.HIGH" % TrigPin
     GPIO.output(TrigPin, GPIO.LOW)
+    print "pin %s has benn set to GPIO.LOW" % TrigPin
+
+    print "pin EchoPin 's GPIO.input value is %f" % GPIO.input(EchoPin)
 
     while not GPIO.input(EchoPin):
         pass
     start = time.time()
+    print "pin EchoPin 's GPIO.input value is %f" % GPIO.input(EchoPin)
+    print "start time is %s" % start
 
     while GPIO.input(EchoPin):
         pass
+    print "pin EchoPin 's GPIO.input value is %f" % GPIO.input(EchoPin)
     stop = time.time()
+    print "stop time is %s" % stop
 
     # Calculate pulse length
     elapsed = stop-start
