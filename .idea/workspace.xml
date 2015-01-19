@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9f25695a-5311-40ca-8e98-4101bf3abadf" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ultrasonic.py" afterPath="$PROJECT_DIR$/ultrasonic.py" />
-    </list>
+    <list default="true" id="9f25695a-5311-40ca-8e98-4101bf3abadf" name="Default" comment="" />
     <ignored path="BeagleBoneBlack.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -43,8 +41,8 @@
       <file leaf-file-name="ultrasonic.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ultrasonic.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.36514524" vertical-offset="328" max-vertical-offset="1296">
-              <caret line="28" column="29" selection-start-line="28" selection-start-column="29" selection-end-line="28" selection-end-column="29" />
+            <state vertical-scroll-proportion="0.62655604" vertical-offset="274" max-vertical-offset="1296">
+              <caret line="32" column="35" selection-start-line="32" selection-start-column="35" selection-end-line="32" selection-end-column="35" />
               <folding>
                 <element signature="e#80#113#0" expanded="true" />
               </folding>
@@ -535,12 +533,12 @@
       <created>1421511027983</created>
       <option name="number" value="Default" />
       <updated>1421511027983</updated>
-      <workItem from="1421511027555" duration="4775000" />
+      <workItem from="1421511027555" duration="5527000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4775000" />
+    <option name="totallyTimeSpent" value="5527000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1299" height="633" extended-state="0" />
@@ -608,8 +606,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ultrasonic.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.36514524" vertical-offset="328" max-vertical-offset="1296">
-          <caret line="28" column="29" selection-start-line="28" selection-start-column="29" selection-end-line="28" selection-end-column="29" />
+        <state vertical-scroll-proportion="0.62655604" vertical-offset="274" max-vertical-offset="1296">
+          <caret line="32" column="35" selection-start-line="32" selection-start-column="35" selection-end-line="32" selection-end-column="35" />
           <folding>
             <element signature="e#80#113#0" expanded="true" />
           </folding>
