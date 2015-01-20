@@ -99,65 +99,43 @@ Das U-Boot -- the Universal Boot Loader http://www.denx.de/wiki/U-Boot
 
 First, the source code was downloaded, checked-out and patched:
 
-git clone git://github.com/beagleboard/kernel.git
-    
+    git clone git://github.com/beagleboard/kernel.git
 
-    This downloads the kernel source
+This downloads the kernel source
 
     cd kernel
-        
+    git checkout 3.8
 
+The head of 3.8 release was checked out. For further study how to check out a release tag that matches pre-built published images
 
-        git checkout 3.8
-            
+    ./patch.sh
+    This step may take 10 minutes or longer
 
-            The head of 3.8 release was checked out. For further study how to check out a release tag that matches pre-built published images
+Some further preparations before the kernel is built:
 
-            ./patch.sh
-                
+    cp configs/beaglebone kernel/arch/arm/configs/beaglebone_defconfig
 
-                This step may take 10 minutes or longer
+We wish to build beaglebone series kernels
 
-
-                Some further preparations before the kernel is built:
-
-                cp configs/beaglebone kernel/arch/arm/configs/beaglebone_defconfig
-                    
-
-                    We wish to build beaglebone series kernels
-
-                    wget http://arago-project.org/git/projects/?p=am33x-cm3.git\;a=blob_plain\;f=bin/am335x-pm-firmware.bin\;hb=HEAD -O kernel/firmware/am335x-pm-firmware.bin
+    wget http://arago-project.org/git/projects/?p=am33x-cm3.git\;a=blob_plain\;f=bin/am335x-pm-firmware.bin\;hb=HEAD -O kernel/firmware/am335x-pm-firmware.bin
                         
+Pre-compiled power management firmware
 
-                        Pre-compiled power management firmware
+    cd kernel
 
-                        cd kernel
-                            
+These steps will compile the kernel and some kernel modules:
 
+    make ARCH=arm CROSS_COMPILE=${CC} beaglebone_defconfig
+   
+    make ARCH=arm CROSS_COMPILE=${CC} uImage dtbs
+    This step builds the kernel and may take 15-20 minutes or longer
 
+    make ARCH=arm CROSS_COMPILE=${CC} uImage-dtb.am335x-boneblack
+    This step builds the kernel for the BBB
 
-                            These steps will compile the kernel and some kernel modules:
+    make ARCH=arm CROSS_COMPILE=${CC} modules
+    This builds the kernel modules and may take 20 minutes or longer
 
-                            make ARCH=arm CROSS_COMPILE=arm-linux-gnu- beaglebone_defconfig
-                                
+This whole process took around an hour on a VM running on a i5 2.5GHz laptop. On an i7 1.6GHz, it took twice as long, so if you have a choice then it makes sense to spend some time examining which server you really wish to develop on.
 
-
-                                make ARCH=arm CROSS_COMPILE=arm-linux-gnu- uImage dtbs
-                                    
-
-                                    This step builds the kernel and may take 15-20 minutes or longer
-
-                                    make ARCH=arm CROSS_COMPILE=arm-linux-gnu- uImage-dtb.am335x-boneblack
-                                        
-
-                                        This step builds the kernel for the BBB
-
-                                        make ARCH=arm CROSS_COMPILE=arm-linux-gnu- modules
-                                            
-
-                                            This builds the kernel modules and may take 20 minutes or longer
-
-
-                                            This whole process took around an hour on a VM running on a i5 2.5GHz laptop. On an i7 1.6GHz, it took twice as long, so if you have a choice then it makes sense to spend some time examining which server you really wish to develop on.
-
-                                            In the /home/username/develop/kbuild/kernel/kernel/arch/arm/boot folder, there will be a uImage-dtb.am335x-boneblack file. 
+In the /home/username/develop/kbuild/kernel/kernel/arch/arm/boot folder, there will be a uImage-dtb.am335x-boneblack file. 
