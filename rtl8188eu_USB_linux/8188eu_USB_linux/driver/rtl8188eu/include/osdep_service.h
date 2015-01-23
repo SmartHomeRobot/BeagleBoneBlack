@@ -1394,7 +1394,7 @@ static __inline void thread_enter(char *name);
 static __inline void thread_enter(char *name)
 {
 #ifdef PLATFORM_LINUX
-	daemonize("%s", name);
+	//daemonize("%s", name);
 	allow_signal(SIGTERM);
 #endif
 #ifdef PLATFORM_FREEBSD
