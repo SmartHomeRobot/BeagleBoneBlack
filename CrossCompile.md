@@ -74,7 +74,7 @@ Das U-Boot -- the Universal Boot Loader http://www.denx.de/wiki/U-Boot
     ~/
     git clone git://git.denx.de/u-boot.git
     cd u-boot/
-    git checkout v2014.10 -b tmp
+    git checkout master
 
 ## 5.2 Patches:
     ~/u-boot
